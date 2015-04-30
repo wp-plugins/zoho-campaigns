@@ -1,5 +1,5 @@
 === Zoho Campaigns for WordPress ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors:Zoho Campaigns
 Tags: zoho campaigns,sign-up form, mailing list, contacts,newsletter, email marketing plugin, zoho
 Requires at least: 3.0.1
 Tested up to: 3.4
