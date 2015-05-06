@@ -49,8 +49,8 @@ Once you install the Zoho Campaigns plugin on WordPress, you need to integrate y
 
 1.	Go to *Zoho Campaigns Plugin > API Settings*
 2.	Enter the following information
-* Email Address – Your email address used in Zoho Campaigns account
-* API Key – An authentication code unique to your Zoho Campaigns account (For more details check FAQ)
+	* Email Address – Your email address used in Zoho Campaigns account,
+	* API Key – An authentication code unique to your Zoho Campaigns account (For more details check FAQ),
 3.	Click the **Integrate** button to proceed
 
 
