@@ -31,7 +31,7 @@ You can choose any of the pre-designed sign-up forms you've created in Zoho Camp
 = What is Zoho Campaigns? =
 
 Zoho Campaigns is an email marketing software that lets you send email and social media campaigns to your subscribers.
-You need to create an account with Zoho Campaigns to use this plugin. If you do not have an account yet, you can sign up at:https://www.zoho.com/campaigns/
+You need to create an account with Zoho Campaigns to use this plugin. If you do not have an account yet, you can sign up [https://www.zoho.com/campaigns/](https://www.zoho.com/campaigns/)
 
 == Installation ==
 
@@ -49,8 +49,8 @@ Once you install the Zoho Campaigns plugin on WordPress, you need to integrate y
 
 1.	Go to *Zoho Campaigns Plugin > API Settings*
 2.	Enter the following information
-            * Email Address – Your email address used in Zoho Campaigns account
-            * API Key – An authentication code unique to your Zoho Campaigns account (For more details check FAQ)
+* Email Address – Your email address used in Zoho Campaigns account
+* API Key – An authentication code unique to your Zoho Campaigns account (For more details check FAQ)
 3.	Click the **Integrate** button to proceed
 
 
