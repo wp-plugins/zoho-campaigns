@@ -1,6 +1,10 @@
 var zc_domain_url = "https://campaigns.zoho.com";
 jQuery(document).ready(function () {
     window.history.pushState(null,null,window.location.href.replace("settings-updated=true",""));
+	if(typeof(zc_on_load_api_val) == "undefined")
+	{
+		return;
+	}
     if (jQuery("#zc_api_key").val() != '') {
         jQuery("#zc_api_key").attr("disabled", "disabled");
         jQuery("#zc_api_key_error").html("");

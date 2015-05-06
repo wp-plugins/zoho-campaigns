@@ -1226,6 +1226,10 @@ function zc_createNewForm() {
         alert("You've already created sign up forms for all mailing lists present in your account");
         return;
     }*/
+    if(typeof(zc_on_load_apikey_val) == "undefined")
+    {
+        return;
+    }
     zc_savedsignupformid = -1;
     if(zc_first_load || zc_saved_idval.length == zc_all_idval.length) {
         jQuery("#new_mailing_button").attr("disabled","disabled");
