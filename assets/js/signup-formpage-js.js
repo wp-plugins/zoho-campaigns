@@ -32,7 +32,7 @@ function zc_savedIdFinder(idval) {
 jQuery(document).ready(function () {
     window.history.pushState(null,null,window.location.href.replace("settings-updated=true",""));
     jQuery("#wpcontent").css("margin-left","160px");
-    if(zc_all_idval.length == 0 && typeof zc_str != 'undefined' && zc_str != "1:") {
+    if( (typeof zc_all_idval) != undefined && zc_all_idval.length == 0 && typeof zc_str != 'undefined' && zc_str != "1:") {
         //jQuery("#click_list_content").css("display","none");
         jQuery("#click_list_div").css("display","none");
         jQuery("#proceed_div").css("display","none");

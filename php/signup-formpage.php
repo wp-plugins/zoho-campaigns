@@ -1342,8 +1342,8 @@ function zc_formprinter($apiKeyVal,$domain_name,$id,$sno) {
                 Zoho Campaigns Sign Up Creation
         </title>
         <script type="text/javascript">
-            if(typeof variable === 'undefined') {
-                const zc_pluginDir = "<?php echo plugins_url("",dirname(__FILE__)); ?>";
+            if(typeof zc_pluginDir === 'undefined') {
+                const zc_pluginDir = "<?php echo plugins_url("",dirname(__FILE__));?>";
             }
             var zc_all_idval = new Array();
             var zc_unsaved_idval = new Array();
