@@ -65,7 +65,12 @@ try {
         }
     }
     $domain_name = 'https://campaigns.zoho.com';
-    $xmldata = $domain_name . '/api/getmailinglistsprivacy?authtoken=' . $apiKeyVal . '&scope=CampaignsAPI&resfmt=XML&sort=asc&fromindex=1&usertype=1&range=0&sno=' . $str;
+    if($str != "1:") {
+        $xmldata = $domain_name . '/api/getmailinglistsprivacy?authtoken=' . $apiKeyVal . '&scope=CampaignsAPI&resfmt=XML&sort=asc&fromindex=1&usertype=1&range=0&sno=' . $str;
+    }
+    else {
+        $xmldata = $domain_name . '/api/getmailinglistsprivacy?authtoken=' . $apiKeyVal . '&scope=CampaignsAPI&resfmt=XML&sort=asc&fromindex=1&usertype=1&range=0';
+    }
     $open = wp_remote_post($xmldata, array(
             'method' => 'POST',
             'timeout' => 45
@@ -1338,9 +1343,6 @@ function zc_formprinter($apiKeyVal,$domain_name,$id,$sno) {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <title>
-                Zoho Campaigns Sign Up Creation
-        </title>
         <script type="text/javascript">
             if(typeof zc_pluginDir === 'undefined') {
                 const zc_pluginDir = "<?php echo plugins_url("",dirname(__FILE__));?>";
@@ -1700,7 +1702,7 @@ function zc_formprinter($apiKeyVal,$domain_name,$id,$sno) {
                     <input  class="zcnewcnclbutton" type="button" id="cancel_list_selection" value="Cancel" style="display:none;" />
                 </div>
                 <div class="zcwelcomepanouter" id="no_mailing_list" style="display:none;">
-                    <div class="zcwelcomepansf">
+                    <div class="zcwelcomepansf" style="width:100%">
                         <div class="zctcenter zcmt20">
                             <img src="<?php echo plugins_url('assets/images/zc_mailinglist.png', dirname(__FILE__)); ?>" alt="">
                         </div>
@@ -1719,7 +1721,7 @@ function zc_formprinter($apiKeyVal,$domain_name,$id,$sno) {
         else if($xml->status == 'success' && $xml->code == 2401)    {
 ?>
             <div class="zcwelcomepanouter" id="no_mailing_list" >
-                <div class="zcwelcomepansf">
+                <div class="zcwelcomepansf" style="width:100%">
                     <div class="zctcenter zcmt20">
                         <img src="<?php echo plugins_url('assets/images/zc_mailinglist.png', dirname(__FILE__)); ?>" alt="">
                     </div>

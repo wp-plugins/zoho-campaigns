@@ -32,14 +32,15 @@ function zc_savedIdFinder(idval) {
 jQuery(document).ready(function () {
     window.history.pushState(null,null,window.location.href.replace("settings-updated=true",""));
     jQuery("#wpcontent").css("margin-left","160px");
-    if( (typeof zc_all_idval) != undefined && zc_all_idval.length == 0 && typeof zc_str != 'undefined' && zc_str != "1:") {
+    if( ( ( (typeof zc_all_idval) != undefined ) && zc_all_idval.length == 0) && typeof zc_str != 'undefined' && zc_str != "1:") {
         //jQuery("#click_list_content").css("display","none");
         jQuery("#click_list_div").css("display","none");
+        jQuery("#saved_list_content").css("display","none");
         jQuery("#proceed_div").css("display","none");
         jQuery("#morelist").css("display","none");
         jQuery("#no_list").css("display","block");
         jQuery("#no_list").html('<div class="zcwelcomepanouter" id="no_mailing_list" >' +
-                        '<div class="zcwelcomepansf">' +
+                        '<div class="zcwelcomepansf" style="width:100%">' +
                             '<div class="zctcenter zcmt20">' +
                                 '<img src="' + zc_pluginDir + '/assets/images/zc_mailinglist.png" alt="">' +
                             '</div>' +
