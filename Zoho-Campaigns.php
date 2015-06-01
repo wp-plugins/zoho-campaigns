@@ -3,7 +3,7 @@
    Plugin Name:Zoho Campaigns
    Plugin URI:https://www.zoho.com/campaigns/help/integrations/zoho-campaigns-plugin-for-wordpress.html
    Description:The go-to solution for email marketing, Zoho Campaigns lets you use Sign-up forms for your blog or website. 1) INTEGRATE your Zoho Campaigns account 2) Use Sign-up forms from your account or CREATE one right here in WordPress 3) EMBED these forms in your blog or website.
-   Version:1.0
+   Version:1.1
    Author:Zoho Campaigns
    Author URI:https://zoho.com/campaigns
 */
